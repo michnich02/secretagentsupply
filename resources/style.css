@@ -3,6 +3,10 @@ html {
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 /****** Header  ******/
 
 header {
@@ -24,6 +28,12 @@ header p {
 
 .top {
   display: flex;
+}
+
+.container {
+  width: 960px;
+  /* border: 3px solid green; */
+  margin: auto;
 }
 
 /****** Main Banner ******/
@@ -48,13 +58,13 @@ header p {
   font-size: 1rem;
   font-weight: bold;
   color: white;
+  margin-bottom: .25rem;
 }
 
 .text-block {
   background-color: black;
   width: 20rem;
-  padding-top: 2rem;
-  padding-left: 3rem;
+  padding: 2rem 3rem;
   position: relative;
   top: 9rem;
 }
@@ -67,6 +77,9 @@ header p {
   padding-bottom: .75rem;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  padding: .75rem 9999rem;
+  margin: 0 -9999rem;
 }
 
 .navigation-bar a {
@@ -77,23 +90,28 @@ header p {
 
 /****** Product Grid ******/
 
-.product-grid {
-  display: flex;
+.product {
   margin-top: 3rem;
   text-align: center;
-  justify-content: space-between;
   margin-bottom: 3rem;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: space-between;
 }
 
 .item {
   border: 4px solid black;
   width: 30%;
+  overflow: hidden;
 }
 
-.product-grid img {
-  height: 9rem;
+.item img {
   margin-top: 2rem;
   margin-bottom: 2rem;
+  max-height: 9rem;
+
 }
 
 .product-grid p {
@@ -109,13 +127,26 @@ header p {
 .loc-and-hr {
   display: flex;
   justify-content: space-between;
+  font-family: Helvetica;
 }
 
-.loc-hr {
+.loc-hr-block {
   background-color: black;
   color: white;
   width: 35%;
   padding-left: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+/* ***** Footer ***** */
+
+footer {
+  background-color: black;
+  color: white;
+  height: 5rem;
+}
+
+footer span {
+  font-family: Helvetica;
 }
