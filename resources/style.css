@@ -24,6 +24,7 @@ header img {
 header p {
   margin-top: 0.66rem;
   margin-bottom: 0.66rem;
+  font-family: Helvetica;
 }
 
 .top {
@@ -144,13 +145,16 @@ header p {
 .loc-hr-block {
   background-color: black;
   color: white;
-  width: 35%;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 .loc-hr-block p {
   padding-left: 2rem;
+}
+
+.details p {
+  padding-top: 0.25rem;
 }
 
 .location, .hours {
@@ -179,6 +183,8 @@ footer p {
 
 /* ***** Media Queries ***** */
 
+/* ***** Tablet ***** */
+
 @media only screen and (max-width: 1024px) {
 
   /* ***** Navigation ***** */
@@ -203,6 +209,77 @@ footer p {
 
   .item-3 {
     display: none;
+  }
+
+}
+
+/* ***** Phone ***** */
+
+@media only screen and (max-width: 470px) {
+
+  .container {
+    width: 100%;
+  }
+
+  /* ***** Main Banner ***** */
+
+  .main-banner {
+    height: 15rem;
+  }
+
+  .text-block {
+    padding: 1rem 2rem;
+    width: 100%;
+    top: 10rem;
+  }
+
+  .text-block h1 {
+    font-size: 0.77rem;
+  }
+
+  .text-block p {
+    font-size: 1rem;
+  }
+
+  /* ***** Product Grid ***** */
+
+  .item {
+    width: 90%;
+    margin: auto;
+  }
+
+  .item-2 {
+    display: none;
+  }
+
+  .item-3 {
+    display: none;
+  }
+
+  /* ***** Location and Hours ***** */
+
+  .loc-and-hr {
+    display: block;
+  }
+
+  .loc-hr-block {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+
+  .location, .hours {
+    width: 100%;
+    padding-bottom: 0.5rem;
+  }
+
+  .details p {
+    margin-left: 5%;
+  }
+
+  /* ***** Footer ***** */
+
+  .footer-container {
+    justify-content: center;
   }
 
 }
